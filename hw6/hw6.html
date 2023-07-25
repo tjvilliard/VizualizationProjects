@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization - Homework 6 - The State of the State of the State </title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <!-- 
+       Bootstrap styling if you want to use it: 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+</head>
+
+<body>
+    <div id="header-wrap">
+        <header>
+            <h1>The State of the State of the States</h1>
+            <div>Name: Tj VonWald-Villiard; E-Mail: u1120747@utah.edu; UID: u1120747</div>
+        </header>
+    </div>
+    <div id='option-bar' >
+        <p>Group by Topic</p>
+        <label class="switch" > 
+            <input type="checkbox" id="separate">
+            <span class="slider round"></span>
+          </label>
+    </div>
+    <div style="width: 100%; overflow: hidden;">
+        <div id="swarmdiv" style="width: 600px; float: left;">
+            <svg id="beeswarm">
+                <g id="vis-header">
+                    <g class="axis-text"></g>
+                    <g class="label"></g>
+                </g>
+                <line id="gridline"></line>
+                <g id="cat-labels" ></g>
+                <g id="swarm"></g>
+                <g id="brushes"></g>
+            </svg>
+            
+        </div>
+
+        <div id="table" style="margin-left: 620px;width: 500px; height: 400px; overflow: auto;">
+            <table id="predictionTable">
+                <thead>
+                <tr id="columnHeaders">
+                    <th class="sortable" id="phrase">Phrase<i class="fas no-display" id="state-icon"></i></th>
+                    <th class="sortable" id="frequency">Frequency<i class="fas no-display" id="margin-icon"></i></th>
+                    <th class="sortable" id="percent">Percentages <i class="fas no-display"></i></th>
+                    <th class="sortable" id="total">Total</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><svg id="freqAxis" class="axis"></svg></td>
+                    <td><svg id="percAxis" class="axis"></svg></td>
+                    <td></td>
+                </tr>
+                </thead>
+                <tbody id="predictionTableBody">
+    
+                </tbody>
+            </table>
+        </div>
+   </div>
+    <script src="js/table.js"></script>
+    <script src="js/beeswarm.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

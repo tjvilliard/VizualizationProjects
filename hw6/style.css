@@ -1,0 +1,258 @@
+
+.axis-text {
+    font: 10px arial;
+    font-weight: bold;
+}
+
+.label {
+    font: 12px arial;
+    font-weight: 900;
+}
+
+
+
+.no-display {
+    display: none !important;
+}
+
+#content {
+    margin-left: 10px;
+}
+#option-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-top: 2px solid;
+}
+
+#option-bar > p {
+    font: 12px arial;
+    font-weight: 550;
+    margin-top: 8px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+line {
+    stroke: black;
+    stroke-width: .5;
+}
+
+circle {
+    stroke: black;
+    stroke-width: 0.5;
+}
+
+circle.excluded {
+    opacity: 0.3;
+}
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    width: 40px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    top: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 22px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*Table css*/
+table {
+    border-collapse: collapse;
+    font: 10px sans-serif;
+}
+
+
+
+th:first-of-type {
+    text-align: left;
+}
+
+th {
+    font-weight: 550;
+    text-align: center !important;
+    padding-left: 10px;
+    min-width: 50px;
+    background: rgb(248, 248, 248);
+}
+
+
+
+td {
+    text-align: center;
+}
+
+td:first-of-type
+{
+    text-align: left;
+}
+
+.sorting {
+    background: black;
+    color: white;
+}
+
+.sortable {
+    user-select: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.sortable:hover {
+    background: #d1d1d1;
+}
+
+.sortable.sorting:hover {
+    background: #232323;
+}
+
+.rep {
+    color: firebrick;
+    fill: firebrick;
+}
+
+.dem {
+    color: steelblue;
+    fill: steelblue;
+}
+
+td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color:black;
+}
+
+#predictionTable td {
+    line-height: 0;
+}
+
+#predictionTable tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: #efefef;
+}
+
+table > .label{
+    text-anchor: middle;
+}
+
+@font-face {
+    font-family: 'font1';
+    src: url('assets/font1.ttf');
+}
+
+
+h1 {
+    margin-top: 0;
+    color: #343651;
+}
+
+h2 {
+    color: #343651;
+
+}
+
+* {
+    font-family: 'font1';
+}
+
+header {
+    padding: 0.5em;
+    text-align: center;
+    height: 100px;
+}
+
+.view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-display {
+    display: none !important;
+}
+
+tr:hover .margin-bar {
+    opacity: 0.9;
+}
+
+.margin-bar {
+    opacity: 0.6;
+}
+
+.margin-circle {
+    stroke: black;
+    stroke-width: 0.5;
+}
+
+.state-name {
+    font-size: 11pt;
+    font-weight: 800;
+}
+
+
+path.domain{
+    display: none;
+}
